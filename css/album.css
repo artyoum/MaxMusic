@@ -130,6 +130,7 @@ a:hover {
     
     .bio-title {
         margin: 20px auto;
+        padding: 0;
         text-align: center;
     }
     
