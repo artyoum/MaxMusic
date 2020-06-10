@@ -124,18 +124,21 @@ a:hover {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
+        
         margin: 15px auto 0 auto;
+        
         text-align: center;
     }
     
     .bio-title {
         margin: 20px auto;
         padding: 0;
+        
         text-align: center;
     }
     
     .links-title {
-        margin: 20px auto 5px auto;
+        margin: 20px auto 20px auto;
         padding: 0;
 
         order: 3;
