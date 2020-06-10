@@ -120,7 +120,7 @@ a:hover {
 }
 
 /* Media Queries*/
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
