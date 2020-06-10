@@ -100,9 +100,10 @@ a:hover {
 
 /* Links for Bio */
 .music-links {
-    /* text-align: center; */
+    text-align: center;
     list-style-type: none;
     margin: 0 auto;
+    padding: 0;
 
     order: 4;
 }
@@ -119,3 +120,18 @@ a:hover {
 }
 
 /* Media Queries*/
+@media all and (max-width: 500px) {
+    .bio-links-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px auto 0 auto;
+        text-align: center;
+    }
+
+    .links-title {
+        margin: 20px auto 5px auto;
+        padding: 0;
+
+        order: 3;
+    }
+}
