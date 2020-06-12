@@ -154,7 +154,7 @@ a:hover {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 15px auto 0 auto;
+        margin: 30px auto 0 auto;
         text-align: center;
     }
 
