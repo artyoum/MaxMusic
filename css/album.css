@@ -137,13 +137,12 @@ a:hover {
     grid-column-start: 2;
 
     padding: 9.5px;
-    font-size: 18px;
 }
 
 .link-icon {
     padding: 4px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 4px;
 
     grid-column-start: 1;
@@ -169,7 +168,7 @@ a:hover {
     }
 
     .links-title {
-        margin: 20px auto;
+        margin: 20px 0;
         padding: 0;
 
         order: 3;
