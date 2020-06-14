@@ -175,9 +175,5 @@ a:hover {
         order: 3;
     }
 
-    .link {
-        grid-column-start: 1;
-    }
-
     
 }
