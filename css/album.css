@@ -172,7 +172,7 @@ a:hover {
 /****************
 * Media Queries *
 *****************/
-@media all and (max-width: 700px) {
+@media all and (max-width: 1000px) {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -180,8 +180,7 @@ a:hover {
         text-align: center;
         
         margin-top: 50px;
-        padding: 0;
-        /* padding: 0 8% 30px 8%; */
+        padding: 0 0 30px 0;
     }
 
     .bio-title {
