@@ -3,13 +3,15 @@
 *****************/
 html, body {
     background-color: rgb(214, 129, 49);
-    font-family: Verdana, Geneva, sans-serif;
-    margin: 15px 0 0 0;
-
     color: rgb(255, 255, 255);
 
-    /* min-height: 100vh;
-    min-height: 100%; */
+    font-family: Verdana, Geneva, sans-serif;
+    
+    margin: 0;
+    
+    height: 100%;
+    height: 100vh;
+    overflow: auto;
 }
 
 a {
@@ -27,7 +29,7 @@ a:hover {
 
     padding: 0;
     border-bottom: rgb(194, 194, 194) 1px solid;
-    margin: 0 40px;
+    margin: 30px 40px 0 40px;
 }
 
 .title-container > h1 {
@@ -58,7 +60,7 @@ a:hover {
 ************************** Image container **************************
 * VERY IMPORTANT!!! - Must change when using small number of images *
 *********************************************************************/
-.content-container {
+.img-container {
     /* Cannot center single image with this css, *
     * grid-auto-flow: dense; is probably breaking this feature *
     * CSS below *
@@ -94,7 +96,7 @@ a:hover {
 * Contains Bio and Links to Music * 
 ***********************************/
 .bio-links-container {
-    padding: 30px 18%;
+    padding: 0 7% 30px 18%;
     margin-top: 30px;
 
     background-color: rgb(223, 223, 223);
@@ -107,21 +109,23 @@ a:hover {
 
 .bio-title {
     text-align: center;
-    margin-top: 0;
+    margin-top: 30px;
     
     order: 1;
 }
 
 .bio-text {
-    margin: 0 25%;
+    margin: 0 5%;
     font-size: 18px;
     
     order: 3;
 }
 
-/* Links for Bio */
+/************************ 
+* Links to Artist Pages *
+*************************/
 .links-title {
-    margin-top: 0;
+    margin-top: 30px;
     text-align: center;
 
     order: 2;
@@ -136,7 +140,6 @@ a:hover {
     order: 4;
 
     display: grid;
-
     align-items: center;
 }
 
@@ -160,23 +163,27 @@ a:hover {
     grid-column-start: 1;
 }
 
-.pic-link {
+.icon {
     padding-top: 2.6px;
 }
 
 /****************
 * Media Queries *
 *****************/
-@media all and (max-width: 1200px) {
+@media all and (max-width: 700px) {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 50px auto 0 auto;
+        
         text-align: center;
+        
+        margin-top: 50px;
+        padding: 0;
+        /* padding: 0 8% 30px 8%; */
     }
 
     .bio-text {
-        margin: 0 15%;
+        margin: 0 12%;
     }
 
     .links-title {
