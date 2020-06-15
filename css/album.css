@@ -96,8 +96,10 @@ a:hover {
 * Contains Bio and Links to Music * 
 ***********************************/
 .bio-links-container {
-    padding: 0 7% 30px 18%;
+    padding: 0 9% 30px 18%;
     margin-top: 30px;
+
+    height: 100%;
 
     background-color: rgb(223, 223, 223);
     color: black;
@@ -106,10 +108,12 @@ a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-
+/* Bio */
 .bio-title {
-    text-align: center;
     margin-top: 30px;
+
+    text-align: center;
+    align-self: center;
     
     order: 1;
 }
@@ -121,21 +125,19 @@ a:hover {
     order: 3;
 }
 
-/************************ 
-* Links to Artist Pages *
-*************************/
+/* Links to Artist Pages */
 .links-title {
     margin-top: 30px;
+
     text-align: center;
+    align-self: center;
 
     order: 2;
 }
 
 .music-links-container {
     text-align: center;
-    list-style-type: none;
     margin: 0 auto;
-    padding: 0;
 
     order: 4;
 
@@ -143,7 +145,7 @@ a:hover {
     align-items: center;
 }
 
-.link, .link-icon {
+.link, .icon {
     border: black solid 2px;
     
     margin-bottom: 4px;
@@ -154,7 +156,7 @@ a:hover {
     padding: 9.5px;
 }
 
-.link-icon {
+.icon {
     padding: 4px;
     width: 30px;
     height: 30px;
@@ -163,7 +165,7 @@ a:hover {
     grid-column-start: 1;
 }
 
-.icon {
+.link-icon {
     padding-top: 2.6px;
 }
 
@@ -182,12 +184,16 @@ a:hover {
         /* padding: 0 8% 30px 8%; */
     }
 
+    .bio-title {
+        margin-bottom: 10px;
+    }
+
     .bio-text {
         margin: 0 12%;
     }
 
     .links-title {
-        margin: 20px 0;
+        margin-top: 0;
         padding: 0;
 
         order: 3;
