@@ -54,17 +54,28 @@ a:hover {
     display: grid;
 }
 
-/* Image container */
+/******************************************************************** 
+************************** Image container **************************
+* VERY IMPORTANT!!! - Must change when using small number of images *
+*********************************************************************/
 .content-container {
+    /* Cannot center single image with this css, *
+    * grid-auto-flow: dense; is probably breaking this feature *
+    * CSS below *
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    */
+
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: dense;
-
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    align-items: center;
-    justify-items: center;
 
-    width: 70%;
+    width: 60%;
+    
     margin: 0 auto;
 }
 
@@ -79,7 +90,9 @@ a:hover {
     object-fit: cover;
 }
 
-/* Contains Bio and Links to Music */
+/**********************************
+* Contains Bio and Links to Music * 
+***********************************/
 .bio-links-container {
     padding: 30px 18%;
     margin-top: 30px;
@@ -100,7 +113,7 @@ a:hover {
 }
 
 .bio-text {
-    margin: 0;
+    margin: 0 25%;
     font-size: 18px;
     
     order: 3;
@@ -135,14 +148,13 @@ a:hover {
 
 .link {
     grid-column-start: 2;
-
     padding: 9.5px;
 }
 
 .link-icon {
     padding: 4px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-right: 4px;
 
     grid-column-start: 1;
@@ -152,27 +164,26 @@ a:hover {
     padding-top: 2.6px;
 }
 
-/* Media Queries*/
+/****************
+* Media Queries *
+*****************/
 @media all and (max-width: 1200px) {
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr;
-
         margin: 50px auto 0 auto;
         text-align: center;
     }
 
     .bio-text {
-        padding: 0;
-        margin: 0 4px;
+        margin: 0 15%;
     }
 
     .links-title {
-        margin: 20px 0;
+        margin: 20px auto 20px auto;
         padding: 0;
 
         order: 3;
     }
 
-    
 }
