@@ -8,7 +8,7 @@ window.onload = function() {
         let imgContainer = document.getElementById("img-container");
 
         imgContainer.style.gridTemplateColumns = "1fr 1fr";
-        imgContainer.style.width = "32%";
+        imgContainer.style.width = "65%";
         
 
         console.log("Changed style");
