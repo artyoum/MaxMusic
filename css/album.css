@@ -42,11 +42,19 @@ a:hover {
 
 .timer-container {
     text-align: center;
+
+    /* ONLY USE WHEN NO TIMER NECESSARY (obviously) *
+    display: none; */
 }
 
 /* Timer */
 .timer {
     font-size: 30px;
+}
+
+/* Main */
+main {
+    margin-top: 30px;
 }
 
 /***********
@@ -74,21 +82,27 @@ a:hover {
     display: grid;
     grid-gap: 5px;
     grid-auto-flow: row dense;
-    width: 60%;
-    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-  
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    width: 50%;
+    
     margin: 0 auto;
 }
 
-/*
+/* Going unused for now, saved for potential use in the future *
+
 .album-link {
     
 }
-*/
 
 .big {
     grid-row: span 2;
     grid-column: span 2;
+}
+*/
+
+.album-link:hover {
+    border: orangered 8px solid;
 }
 
 .image {
@@ -128,7 +142,11 @@ a:hover {
 
 .bio-text {
     margin: 0 5%;
+
     font-size: 18px;
+    text-align: center;
+    
+    align-self: center;
     
     order: 3;
 }
@@ -210,7 +228,7 @@ a:hover {
     }
 
     .links-title {
-        margin-top: 0;
+        margin-top: 30px;
         padding: 0;
 
         font-size: 30px;
