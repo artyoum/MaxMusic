@@ -33,11 +33,11 @@ a:hover {
 }
 
 .title-container > h1 {
-    margin-top: 12px;
+    margin: 16px auto;
 }
 
 .title-container > img {
-    width: 40px;
+    width: 35px;
 }
 
 .timer-container {
@@ -64,37 +64,27 @@ main {
     display: grid;
 }
 
-/******************************************************************** 
-************************** Image container **************************
-* VERY IMPORTANT!!! - Must change when using small number of images *
-*********************************************************************/
+/******************
+* Image container *
+*******************/
 .img-container {
-    /* Cannot center single image with this css, *
-    * grid-auto-flow: dense; is probably breaking this feature *
-    * CSS below *
-
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    */
-
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 8px;
     grid-auto-flow: row dense;
+    /* Made obselete by imgGrid.js
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
     width: 50%;
+    */
     
     margin: 0 auto;
 }
 
 /* Going unused for now, saved for potential use in the future *
-
 .album-link {
     
-}
-
+} */
+/* May be used for bigger grids *
 .big {
     grid-row: span 2;
     grid-column: span 2;
@@ -193,6 +183,15 @@ main {
 
 .link-icon {
     padding-top: 2.6px;
+}
+
+/* Icon Attribution div */
+.icon-attribution {
+    text-align: center;
+    font-size: small;
+
+    background-color: rgb(223, 223, 223);
+    color: black;
 }
 
 /****************
