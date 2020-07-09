@@ -26,16 +26,20 @@ window.onload = function() {
             } else { //resizes back to default style when 5 or more albums used
                 imgContainer.style.gridTemplateColumns = "repeat(auto-fill, minmax(250px, 1fr)";
                 imgContainer.style.width = "70%";
+
+                console.log("Default style: 5OOrMoreStyle");
             }
         } else { //no match (desktop view)
             if (numImages <= 4) {
                 imgContainer.style.gridTemplateColumns = "1fr 1fr";
-                imgContainer.style.width = "42%";
+                imgContainer.style.width = "50%";
         
                 console.log("Slim style (widescreen)");
             } else { //resizes back to default style when 5 or more albums used
                 imgContainer.style.gridTemplateColumns = "repeat(auto-fill, minmax(250px, 1fr)";
                 imgContainer.style.width = "70%";
+
+                console.log("Default style: 5OOrMoreStyle");
             }
         }
     }    
