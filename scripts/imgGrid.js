@@ -19,7 +19,7 @@ window.onload = function() {
     function resizeImg(x) {
         if (x.matches) { // If media query matches (mobile view)
             if (numImages <= 4) {
-                imgContainer.style.gridTemplateColumns = "1fr 1fr";
+                imgContainer.style.gridTemplateColumns = "1fr";
                 imgContainer.style.width = "65%";
         
                 console.log("Slim style (mobile)");
