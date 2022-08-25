@@ -4,7 +4,7 @@
 html, body {
     background-color: rgb(214, 129, 49);
     
-    font-family: Garramond, Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     
     margin: 0;
     
@@ -113,6 +113,7 @@ main {
 * Contains Bio and Links to Music * 
 ***********************************/
 .bio-links-container {
+    font-family: Garamond, Verdana, Geneva, sans-serif;;
     padding: 0 9% 30px 18%;
     margin-top: 30px;
 
