@@ -4,7 +4,7 @@
 html, body {
     background-color: rgb(214, 129, 49);
     
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Garramond, Verdana, Geneva, sans-serif;
     
     margin: 0;
     
@@ -202,6 +202,8 @@ main {
 /****************
 * Media Queries *
 *****************/
+
+/*
 @media all and (max-width: 980px) {
     .bio-links-container{
         display: grid;
@@ -251,7 +253,6 @@ main {
 
 }
 
-/*
 @media all and (min-width: 980px) {
     
  }
