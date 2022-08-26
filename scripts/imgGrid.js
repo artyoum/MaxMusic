@@ -1,13 +1,13 @@
 //Changes the style of the image grid when there are few images
 window.onload = function() {
     //gets number of album images
-    let numImages = document.getElementsByClassName("album-link").length;
+    let numImages = document.getElementsByClassName("img-container").length;
     //gets the albums' container
     let imgContainer = document.getElementById("img-container");
 
     console.log(`Number of images: ${numImages}`);
     
-    let x = window.matchMedia("(max-width: 915px)");
+    let x = window.matchMedia("(max-width: 412px;)");
     
     // Call listener function at run time
     resizeImg(x);
