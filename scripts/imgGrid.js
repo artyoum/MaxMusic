@@ -7,7 +7,7 @@ window.onload = function() {
 
     console.log(`Number of images: ${numImages}`);
     
-    let x = window.matchMedia("(max-width: 412px;)");
+    let x = window.matchMedia("(max-width: 500px;)");
     
     // Call listener function at run time
     resizeImg(x);
