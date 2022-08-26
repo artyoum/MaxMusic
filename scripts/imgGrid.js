@@ -3,7 +3,7 @@ window.onload = function() {
     //gets number of album images
     let numImages = document.getElementsByClassName("image").length;
     //gets the albums' container
-    let imgContainer = document.getElementById("img-container");
+    let imgContainer = document.getElementsByClass("img-container");
 
     console.log(`Number of images: ${numImages}`);
     
@@ -17,7 +17,7 @@ window.onload = function() {
     
     //if the user is on mobile && there are less than 4 images in the grid
     function resizeImg(x) {
-        if (x.matches) { // If media query matches (mobile view)
+        if (window.matchMedia("(max-width: 700px)").matches) { // If media query matches (mobile view)
             imgContainer.style.gridTemplateColumns = "1fr";
             imgContainer.style.width = "65%";
         
