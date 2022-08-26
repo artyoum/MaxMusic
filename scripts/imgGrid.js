@@ -2,22 +2,46 @@
 window.onload = function() {
     //gets number of album images
     let numImages = document.getElementsByClassName("image").length;
-    //gets the albums' container
-    let imgContainer = document.getElementById("img-container");
-
     console.log(`Number of images: ${numImages}`);
     
-    var x = window.matchMedia("(max-width: 700px)");
+    //gets the albums' container
+    let imgContainer = document.getElementById("img-container");
     
+    var x = window.matchMedia("(max-width: 700px)");
+    console.log(`Does window.matchMedia? ${x}`);
+    
+    adjustMenuDesign();
+    window.addEventListener("resize", adjustMenuDesign);
+    
+    function adjustMenuDesign() {
+        const width = window.matchMedia("(max-width: 700px)");
+        if (width.matches) { // If media query matches (mobile view)
+            imgContainer.style.gridTemplateColumns = "1fr";
+            imgContainer.style.width = "65%";
+        
+            console.log("Mobile View");
+            alert("resized");
+        } 
+        else { //no match (desktop view)
+            imgContainer.style.gridTemplateColumns = "1fr 1fr";
+            imgContainer.style.width = "50%";
+        
+            console.log("Desktop View");
+            alert("you fucked up again/no resize");
+        }
+    }
+    
+    /*
     // Call listener function at run time
     resizeImg(x);
     
     // Attach listener function on state changes
     x.addListener(resizeImg);
-    
-    //if the user is on mobile && there are less than 4 images in the grid
+        
+    //if the user is on mobile, show 1 img per row, else 2
     function resizeImg(x) {
-        if (x.matches) { // If media query matches (mobile view)
+        // If media query matches (mobile view)
+        if (x.matches) { 
             imgContainer.style.gridTemplateColumns = "1fr";
             imgContainer.style.width = "65%";
         
@@ -29,5 +53,6 @@ window.onload = function() {
         
             console.log("Desktop View");
         }
-    }    
+    }
+    */  
 }
