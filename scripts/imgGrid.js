@@ -1,7 +1,7 @@
 //Changes the style of the image grid when there are few images
 window.onload = function() {
     //gets number of album images
-    let numImages = document.getElementsByClassName("img-container").length;
+    let numImages = document.getElementsByClassName("image").length;
     //gets the albums' container
     let imgContainer = document.getElementById("img-container");
 
