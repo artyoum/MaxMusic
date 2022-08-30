@@ -261,9 +261,9 @@ main {
         grid-gap: 12px;
         grid-auto-flow: row dense;
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
 
-        width: 65%;
+        width: 50%;
 
         margin: 40px auto;
     }
