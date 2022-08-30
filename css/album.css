@@ -255,7 +255,7 @@ main {
 }
 
 
-@media all and (min-width: 700px) { 
+@media all and (min-width: 981px) { 
     .img-container {
         display: grid;
         grid-gap: 12px;
@@ -263,7 +263,7 @@ main {
 
         grid-template-columns: 1fr 1fr;
 
-        width: 70%;
+        width: 50%;
 
         margin: 40px auto;
     }
