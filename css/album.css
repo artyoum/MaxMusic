@@ -77,9 +77,9 @@ main {
     grid-gap: 12px;
     grid-auto-flow: row dense;
     
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
-    width: 50%;
+    width: 65%;
     
     
     margin: 40px auto;
@@ -206,19 +206,6 @@ main {
 
 
 @media all and (max-width: 700px) {
-    .img-container {
-        display: grid;
-        grid-gap: 12px;
-        grid-auto-flow: row dense;
-
-        grid-template-columns: 1fr;
-
-        width: 65%;
-
-
-        margin: 40px auto;
-    }
-    
     .bio-links-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -267,7 +254,17 @@ main {
 
 }
 
-/*
-@media all and (min-width: 980px) { 
- }
- */
+
+@media all and (min-width: 700px) { 
+    .img-container {
+        display: grid;
+        grid-gap: 12px;
+        grid-auto-flow: row dense;
+
+        grid-template-columns: 1fr;
+
+        width: 65%;
+
+        margin: 40px auto;
+    }
+}
