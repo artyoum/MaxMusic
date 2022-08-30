@@ -76,11 +76,11 @@ main {
     display: grid;
     grid-gap: 12px;
     grid-auto-flow: row dense;
-    /* Made obselete by imgGrid.js
+    Made obselete by imgGrid.js
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
-    width: 50%;
-    */
+    width: 65%;
+    
     
     margin: 40px auto;
 }
@@ -204,11 +204,11 @@ main {
 * Media Queries *
 *****************/
 
-/*
-@media all and (max-width: 980px) {
+
+@media all and (max-width: 700px) {
     .bio-links-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         
         text-align: center;
         
@@ -254,6 +254,7 @@ main {
 
 }
 
+/*
 @media all and (min-width: 980px) {
     
  }
