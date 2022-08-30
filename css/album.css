@@ -76,7 +76,7 @@ main {
     display: grid;
     grid-gap: 12px;
     grid-auto-flow: row dense;
-    Made obselete by imgGrid.js
+    
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
     width: 65%;
@@ -255,7 +255,6 @@ main {
 }
 
 /*
-@media all and (min-width: 980px) {
-    
+@media all and (min-width: 980px) { 
  }
  */
