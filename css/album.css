@@ -79,7 +79,7 @@ main {
     
     grid-template-columns: 1fr;
 
-    width: 65%;
+    width: 50%;
     
     
     margin: 40px auto;
@@ -263,7 +263,7 @@ main {
 
         grid-template-columns: 1fr 1fr;
 
-        width: 50%;
+        width: 65%;
 
         margin: 40px auto;
     }
