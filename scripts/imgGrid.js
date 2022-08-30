@@ -7,7 +7,7 @@ window.onload = function() {
     //gets the albums' container
     let imgContainer = document.getElementById("img-container");
     
-    var x = window.matchMedia("(max-width: 700px)");
+    var x = window.matchMedia("all and (max-width: 980px)");
     console.log(`Does window.matchMedia? ${x.matches}`);
     
     //imgGrid resizing listener code starts here
@@ -18,16 +18,14 @@ window.onload = function() {
         const width = window.matchMedia("all and (max-width: 980px)");
         if (width.matches) { // If media query matches (mobile view)
             imgContainer.style.gridTemplateColumns = "1fr";
-            imgContainer.style.width = "50%";
+            imgContainer.style.width = "65%";
         
-            console.log("resized");
             console.log("Mobile View");
         } 
         else { //no match (desktop view)
             imgContainer.style.gridTemplateColumns = "1fr 1fr";
-            imgContainer.style.width = "65%";
+            imgContainer.style.width = "50%";
         
-            console.log("you fucked up again/no resize");
             console.log("Desktop View");
         }
     }
