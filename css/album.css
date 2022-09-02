@@ -76,13 +76,13 @@ main {
     display: grid;
     grid-gap: 12px;
     grid-auto-flow: row dense;
-    
+    /*
     grid-template-columns: 1fr;
 
     width: 50%;
-    
-    
+        
     margin: 40px auto;
+    */
 }
 
 /* Going unused for now, saved for potential use in the future *
@@ -254,7 +254,7 @@ main {
 
 }
 
-
+/*
 @media all and (min-width: 981px) { 
     .img-container {
         display: grid;
@@ -267,4 +267,5 @@ main {
 
         margin: 40px auto;
     }
+*/
 }
