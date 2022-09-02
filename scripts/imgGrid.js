@@ -43,12 +43,14 @@ window.onload = function() {
         if (x.matches) { 
             imgContainer.style.gridTemplateColumns = "1fr";
             imgContainer.style.width = "65%";
+            imgContainer.style.margin = "40px auto";
         
             console.log("Mobile View");
         } 
         else { //no match (desktop view)
             imgContainer.style.gridTemplateColumns = "1fr 1fr";
             imgContainer.style.width = "50%";
+            imgContainer.style.margin = "40px auto";
         
             console.log("Desktop View");
         }
